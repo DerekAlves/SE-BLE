@@ -45,7 +45,7 @@ static ssize_t write_chars(struct bt_conn *conn, const struct bt_gatt_attr *attr
 	prepare_count = 0;
 
     if(rx_callback)
-        rx_callback((const uint8_t *)buf,len);
+        rx_callback((const uint8_t *)buf, len);
     
     buf = "";
 	return len;
